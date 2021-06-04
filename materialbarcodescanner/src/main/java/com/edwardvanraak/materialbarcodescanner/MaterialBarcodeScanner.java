@@ -45,9 +45,9 @@ public class MaterialBarcodeScanner {
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
     public void onBarcodeScannerResult(Barcode barcode){
         onResultListener.onResult(barcode);
-        EventBus.getDefault().removeStickyEvent(barcode);
-        EventBus.getDefault().unregister(this);
-        mMaterialBarcodeScannerBuilder.clean();
+//         EventBus.getDefault().removeStickyEvent(barcode);
+//         EventBus.getDefault().unregister(this);
+//         mMaterialBarcodeScannerBuilder.clean();
     }
 
     /**
